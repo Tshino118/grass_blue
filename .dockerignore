@@ -1,0 +1,282 @@
+# =============================================================================
+# DJI Tello Monitor - Docker Ignore Configuration
+# =============================================================================
+
+# Git and Version Control
+# =============================================================================
+.git
+.gitignore
+*.git
+.gitattributes
+.gitmodules
+
+# IDE and Editor Settings
+# =============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vscode
+.idea
+
+# Claude Code Settings (Private)
+# =============================================================================
+.claude/
+.mcp.json
+
+# Container Use Settings (Private)
+# =============================================================================
+.container-use/
+
+# Documentation (Don't include in containers)
+# =============================================================================
+README.md
+*.md
+docs/
+CHANGELOG.md
+LICENSE
+CONTRIBUTING.md
+
+# Environment Variables (Private)
+# =============================================================================
+.env
+.env.*
+*.env
+
+# API Keys and Secrets (Private)
+# =============================================================================
+secrets/
+config/secrets/
+*.key
+*.pem
+*.p12
+*.p8
+api_keys.txt
+credentials.json
+service-account.json
+
+# Python Development Files
+# =============================================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments (Don't copy into container)
+# =============================================================================
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pyvenv.cfg
+
+# Testing and Coverage
+# =============================================================================
+.pytest_cache/
+.coverage
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+htmlcov/
+.cache
+nosetests.xml
+coverage/
+
+# Jupyter Notebook
+# =============================================================================
+.ipynb_checkpoints
+
+# Node.js
+# =============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+
+# Logs (Don't include in container builds)
+# =============================================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime Data
+# =============================================================================
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Docker Files (Don't include in nested builds)
+# =============================================================================
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Development Tools
+# =============================================================================
+.eslintrc.js
+.prettierrc
+.prettierignore
+webpack.config.js
+rollup.config.js
+tsconfig.json
+jest.config.js
+babel.config.js
+
+# OS generated files
+# =============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary folders and files
+# =============================================================================
+tmp/
+temp/
+.tmp/
+*.tmp
+*.temp
+
+# Application Specific Exclusions
+# =============================================================================
+
+# DJI Tello Configuration (Private)
+# =============================================================================
+tello_config.json
+drone_credentials.json
+wifi_config.json
+
+# Video Recording Output (Large files)
+# =============================================================================
+recordings/
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Image Captures (Large files)
+# =============================================================================
+captures/
+screenshots/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+
+# Database files (Should be mounted as volumes)
+# =============================================================================
+*.db
+*.sqlite
+*.sqlite3
+database.json
+
+# Backup files
+# =============================================================================
+*.backup
+*.bak
+*.orig
+*.save
+
+# SSL Certificates (Private)
+# =============================================================================
+*.crt
+*.cer
+*.der
+
+# SSH Keys (Private)
+# =============================================================================
+*.ssh/
+id_rsa*
+id_ed25519*
+id_ecdsa*
+
+# Local development and test files
+# =============================================================================
+local/
+local_*
+dev_*
+test_*
+debug_*
+examples/
+samples/
+
+# Archive files (Large files)
+# =============================================================================
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.zip
+*.rar
+*.7z
+
+# Build artifacts that shouldn't be in container
+# =============================================================================
+dist/
+build/
+out/
+target/
+
+# Editor backup files
+# =============================================================================
+*~
+*.swp
+*.swo
+
+# Package files
+# =============================================================================
+*.deb
+*.rpm
+
+# Source maps (Development only)
+# =============================================================================
+*.map
+
+# Lock files (let container generate its own)
+# =============================================================================
+package-lock.json
+yarn.lock
+Pipfile.lock
+
+# Project specific exclusions
+# =============================================================================
+ProjectLoadmap.md
+scripts/deploy.sh

@@ -1,1 +1,0 @@
-DJI Tello監視アプリケーション開発環境。Python 3.11, FFmpeg, Node.js がインストール済み。djitellopy、opencv-python、flask、flask-socketio、aiortc、websocketsライブラリが利用可能。

@@ -1,0 +1,343 @@
+# =============================================================================
+# DJI Tello Monitor - Git Ignore Configuration
+# =============================================================================
+
+# IDE and Editor Settings
+# =============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude Code Settings (Private)
+# =============================================================================
+.claude/
+.mcp.json
+
+# Container Use Settings (Private)
+# =============================================================================
+.container-use/
+
+# Environment Variables (Private)
+# =============================================================================
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+*.env
+
+# API Keys and Secrets (Private)
+# =============================================================================
+secrets/
+config/secrets/
+*.key
+*.pem
+*.p12
+*.p8
+api_keys.txt
+credentials.json
+service-account.json
+
+# Python
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+# =============================================================================
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pyvenv.cfg
+
+# PyCharm
+# =============================================================================
+.idea/
+
+# Jupyter Notebook
+# =============================================================================
+.ipynb_checkpoints
+
+# Docker
+# =============================================================================
+docker-compose.override.yml
+docker-compose.local.yml
+docker-compose.dev.yml
+*.dockerfile.local
+
+# Docker Volumes and Data
+# =============================================================================
+volumes/
+data/
+postgres_data/
+mysql_data/
+redis_data/
+
+# Node.js
+# =============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+.npm
+.eslintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+.cache/
+
+# Logs
+# =============================================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime Data
+# =============================================================================
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage Directory used by tools like istanbul
+# =============================================================================
+coverage/
+*.lcov
+.nyc_output
+
+# Dependency Directories
+# =============================================================================
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+# =============================================================================
+.npm
+
+# Optional eslint cache
+# =============================================================================
+.eslintcache
+
+# Microbundle cache
+# =============================================================================
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+# =============================================================================
+.node_repl_history
+
+# Output of 'npm pack'
+# =============================================================================
+*.tgz
+
+# Yarn Integrity file
+# =============================================================================
+.yarn-integrity
+
+# dotenv environment variables file
+# =============================================================================
+.env
+.env.test
+.env.production
+
+# parcel-bundler cache (https://parceljs.org/)
+# =============================================================================
+.cache
+.parcel-cache
+
+# Next.js build output
+# =============================================================================
+.next
+
+# Nuxt.js build / generate output
+# =============================================================================
+.nuxt
+dist
+
+# Gatsby files
+# =============================================================================
+.cache/
+public
+
+# Storybook build outputs
+# =============================================================================
+.out
+.storybook-out
+
+# Temporary folders
+# =============================================================================
+tmp/
+temp/
+.tmp/
+
+# OS generated files
+# =============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Linux
+# =============================================================================
+*~
+
+# Windows
+# =============================================================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Application Specific
+# =============================================================================
+
+# DJI Tello Configuration (Private)
+# =============================================================================
+tello_config.json
+drone_credentials.json
+wifi_config.json
+
+# Video Recording Output
+# =============================================================================
+recordings/
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Image Captures
+# =============================================================================
+captures/
+screenshots/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+
+# Database
+# =============================================================================
+*.db
+*.sqlite
+*.sqlite3
+database.json
+
+# Backup files
+# =============================================================================
+*.backup
+*.bak
+*.orig
+*.save
+
+# Compiled files
+# =============================================================================
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Compressed files
+# =============================================================================
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Archive files
+# =============================================================================
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+
+# Test Coverage
+# =============================================================================
+coverage/
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Documentation builds
+# =============================================================================
+docs/_build/
+site/
+
+# Local development files
+# =============================================================================
+local/
+local_*
+dev_*
+test_*
+debug_*
+
+# SSL Certificates (Private)
+# =============================================================================
+*.crt
+*.cer
+*.der
+
+# SSH Keys (Private)
+# =============================================================================
+*.ssh/
+id_rsa*
+id_ed25519*
+id_ecdsa*
+
+# Git
+# =============================================================================
+.git/
+*.orig
+
+# Project specific ignore patterns
+# =============================================================================
+ProjectLoadmap.md
