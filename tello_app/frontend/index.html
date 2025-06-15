@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJI Tello Multi-Drone Monitor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🚁 DJI Tello Multi-Drone Monitor</h1>
+        <div class="connection-status">
+            <span id="connection-status">接続中...</span>
+        </div>
+    </header>
+
+    <main>
+        <!-- コントロールパネル -->
+        <section class="control-panel">
+            <h2>ドローン管理</h2>
+            <div class="drone-controls">
+                <div class="add-drone-form">
+                    <input type="text" id="drone-id" placeholder="ドローンID (例: drone01)">
+                    <input type="text" id="drone-ip" placeholder="IPアドレス (オプション)">
+                    <button id="connect-drone">接続</button>
+                </div>
+                <div class="bulk-controls">
+                    <button id="start-all-streams">全ストリーム開始</button>
+                    <button id="stop-all-streams">全ストリーム停止</button>
+                    <button id="refresh-drones">更新</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ドローンリスト -->
+        <section class="drone-list">
+            <h2>接続済みドローン</h2>
+            <div id="drone-cards" class="drone-grid">
+                <!-- ドローンカードがここに動的に追加される -->
+            </div>
+        </section>
+
+        <!-- 映像表示エリア -->
+        <section class="video-grid">
+            <h2>ライブ映像</h2>
+            <div id="video-container" class="video-container">
+                <!-- 映像がここに表示される -->
+            </div>
+        </section>
+    </main>
+
+    <!-- ドローン情報モーダル -->
+    <div id="drone-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="drone-details">
+                <!-- ドローンの詳細情報がここに表示される -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
