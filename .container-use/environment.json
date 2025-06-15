@@ -1,4 +1,11 @@
 {
   "workdir": "/workdir",
-  "base_image": "ubuntu:24.04"
+  "base_image": "python:3.11-slim",
+  "setup_commands": [
+    "apt-get update \u0026\u0026 apt-get install -y ffmpeg",
+    "apt-get install -y nodejs npm",
+    "apt-get install -y git curl wget gcc",
+    "pip install djitellopy opencv-python flask flask-socketio aiortc websockets",
+    "npm install -g http-server"
+  ]
 }
