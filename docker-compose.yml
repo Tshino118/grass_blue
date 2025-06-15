@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  tello-backend:
+    build: 
+      context: ./tello_app/backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+    volumes:
+      - ./tello_app/backend:/app
+    networks:
+      - tello-network
+
+  tello-frontend:
+    build:
+      context: ./tello_app/frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./tello_app/frontend:/app
+    depends_on:
+      - tello-backend
+    networks:
+      - tello-network
+
+  webrtc-server:
+    build:
+      context: ./tello_app/webrtc
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./tello_app/webrtc:/app
+    networks:
+      - tello-network
+
+networks:
+  tello-network:
+    driver: bridge
